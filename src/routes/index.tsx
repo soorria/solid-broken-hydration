@@ -11,10 +11,7 @@ const Wrapper: ParentComponent<ComponentProps<'div'>> = props => {
       {...props}
       class={props.class}
     >
-      {() => {
-        console.trace('read props.children')
-        return props.children
-      }}
+      {props.children}
     </div>
   )
 }
